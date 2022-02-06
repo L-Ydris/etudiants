@@ -4,6 +4,7 @@ import { User } from '../models/user.model';
 import { Subscription } from 'rxjs';
 import { UserService } from '../services/user.service';
 import { Router } from '@angular/router';
+import { HttpService } from '../services/http.service';
 
 @Component({
   selector: 'app-user-list',
@@ -15,11 +16,11 @@ export class UserListComponent implements OnInit, OnDestroy {
   users: User[];
   userSubscription: Subscription;
 
-  constructor(private router: Router, private userService: UserService) { }
+  constructor(private router: Router, private userService: UserService, private http: HttpService) { }
 
   ngOnInit(): void {
 
-    this.userSubscription = this.userService.userSubject.subscribe(
+    this.userSubscription = this.http.getUsers().subscribe(
       (users: User[]) => {
         this.users = users;
       }

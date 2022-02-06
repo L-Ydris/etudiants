@@ -1,0 +1,24 @@
+body{
+    font-family: 'Poppins',sans-serif;
+}
+
+h2{  
+    text-align: center;  
+    color: #333;  
+    padding: 20px;  
+}
+
+.disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+  }
+
+.btn-success {
+    background-color: #04AA6D;
+    color: aliceblue;
+} 
+
+.btn-danger {
+    background-color: red;
+    color: aliceblue;
+}

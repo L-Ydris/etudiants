@@ -1,0 +1,35 @@
+body  
+{  
+    margin: 0;  
+    padding: 0;  
+    background-color:#3333;  
+    font-family: 'Poppins',sans-serif;
+}  
+.login{  
+        width: 382px;  
+        overflow: hidden;  
+        margin: auto;  
+        margin: 20 0 0 450px;  
+        padding: 80px;  
+        background: #333;  
+        border-radius: 15px ;  
+          
+}  
+
+h2{  
+    text-align: center;  
+    color: #333;  
+    padding: 20px;  
+}
+
+button{
+    margin-top: 50px;
+    width: 100%;
+    background-color: #ffffff;
+    color: #333;
+    padding: 15px 0;
+    font-size: 18px;
+    font-weight: 600;
+    border-radius: 5px;
+    cursor: pointer;
+}
